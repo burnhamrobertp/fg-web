@@ -9,12 +9,6 @@ import thunk from 'redux-thunk'
 
 import {getModule} from 'js/actions/modules'
 
-import Home from './Scenes/Home/Home'
-import Module from './Scenes/Module/Module'
-import ModuleEdit from './Scenes/ModuleEdit/ModuleEdit'
-import Navbar from './Components/Navbar/Navbar'
-import reducers from './reducers/index.js'
-
 export const store = createStore(reducers, composeWithDevTools(
     applyMiddleware(thunk)
 ));
