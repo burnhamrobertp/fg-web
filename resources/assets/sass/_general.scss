@@ -1,0 +1,71 @@
+html, body, #root, #root > div {
+  margin: 0;
+  padding: 0;
+
+  &.ReactModal__Body--open {
+    width: calc(100vw - 17px);
+  }
+
+  div.outerContainer {
+    @extend .container;
+
+    min-height: 100%;
+    background-color: $white;
+  }
+
+  i.link {
+    cursor: pointer;
+    color: #3097D1;
+
+    &:hover {
+      color: #216a94;
+    }
+  }
+}
+
+/**
+ * Overridden element styles
+ */
+select {
+  @extend .custom-select;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid $hr-border-color;
+  height: 0;
+  margin: 14px 0 0;
+  padding: 0;
+
+  &.b-2 {
+    border-top-width: 2px;
+  }
+  &.b-3 {
+    border-top-width: 3px;
+  }
+}
+
+/**
+ * Libraries
+ */
+.sk-spinner {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+.dropdown-display {
+  @extend .dropdown-item;
+
+  font-size: 0.9rem;
+  font-style: italic;
+
+  &:hover {
+    color: inherit !important;
+    text-decoration: inherit !important;
+    background-color: inherit !important;
+  }
+}

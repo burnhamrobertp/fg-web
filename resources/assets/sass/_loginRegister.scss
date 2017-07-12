@@ -1,0 +1,43 @@
+#adl-logreg {
+  #adl-logreg-email,
+  #adl-logreg-pass,
+  #adl-logreg-passc
+  {
+    @extend .form-control;
+    margin-top: .8rem;
+  }
+
+  label.remember-me {
+    @extend .custom-control;
+    @extend .custom-checkbox;
+
+    margin-top: .8rem;
+  }
+
+  a.forgot-password {
+    @extend .float-right;
+
+    margin-top: .8rem;
+  }
+
+  button {
+    @extend .btn;
+    @extend .btn-block;
+
+    margin-top: .8rem;
+
+    &.submit {
+      @extend .btn-primary;
+    }
+  }
+
+  div.switchComponent {
+    margin-top: 1rem;
+
+    button {
+      @extend .btn;
+      @extend .btn-block;
+      @extend .btn-info;
+    }
+  }
+}
