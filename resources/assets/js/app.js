@@ -7,8 +7,6 @@ import {Provider} from 'react-redux'
 import {composeWithDevTools} from 'redux-devtools-extension/developmentOnly';
 import thunk from 'redux-thunk'
 
-import {getModule} from 'js/actions/modules'
-
 export const store = createStore(reducers, composeWithDevTools(
     applyMiddleware(thunk)
 ));
