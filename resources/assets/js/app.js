@@ -7,6 +7,11 @@ import {Provider} from 'react-redux'
 import {composeWithDevTools} from 'redux-devtools-extension/developmentOnly';
 import thunk from 'redux-thunk'
 
+import Navbar from './components/navbar/Navbar'
+import reducers from './reducers/index'
+
+import Home from 'js/scenes/home/Home'
+
 export const store = createStore(reducers, composeWithDevTools(
     applyMiddleware(thunk)
 ));
