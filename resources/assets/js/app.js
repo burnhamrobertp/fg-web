@@ -19,19 +19,6 @@ const App = () => (
             <Navbar/>
             <Switch>
                 <Route exact path="/" component={Home}/>
-                <Route exact path="/module/new" component={(props) => <ModuleEdit moduleId="new"/>}/>
-                <Route exact path="/module/edit/:id" component={ModuleEdit}/>
-                <Route exact path="/module/:id" render={
-                    ({match}) => {
-                        let moduleId = parseInt(match.params.id),
-                            module = store.getState().modules.index[moduleId] || {};
-
-                        if (!module.id)
-                            store.dispatch(getModule(moduleId));
-
-                        return <Module moduleId={moduleId} indexModule={module}/>
-                    }
-                }/>
             </Switch>
         </div>
     </Router>
