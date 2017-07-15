@@ -23,8 +23,8 @@ class Login extends React.Component {
     submit() {
         const data = {
             email: this.props.email,
-            password: document.querySelector('#adl-logreg-pass').value,
-            remember: document.querySelector('#adl-logreg-remember').value || 0
+            password: document.querySelector('#app-logreg-pass').value,
+            remember: document.querySelector('#app-logreg-remember').value || 0
         };
 
         this.props.getLogin(data);
@@ -35,15 +35,15 @@ class Login extends React.Component {
             <div>
                 <div>Have an account?</div>
 
-                <label htmlFor="adl-logreg-email" className="sr-only">Email address</label>
-                <input id="adl-logreg-email" type="text" placeholder="Email address"
+                <label htmlFor="app-logreg-email" className="sr-only">Email address</label>
+                <input id="app-logreg-email" type="text" placeholder="Email address"
                        onChange={this.changeEmail.bind(this)} value={this.props.email}/>
 
-                <label htmlFor="adl-logreg-pass" className="sr-only">Password</label>
-                <input id="adl-logreg-pass" type="password" placeholder="Password"/>
+                <label htmlFor="app-logreg-pass" className="sr-only">Password</label>
+                <input id="app-logreg-pass" type="password" placeholder="Password"/>
 
                 <label className="remember-me">
-                    <input id="adl-logreg-remember" type="checkbox" className="custom-control-input" value="1"/>
+                    <input id="app-logreg-remember" type="checkbox" className="custom-control-input" value="1"/>
                     <span className="custom-control-indicator"/>
                     <span className="custom-control-description">Remember me</span>
                 </label>

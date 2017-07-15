@@ -21,8 +21,8 @@ class Register extends React.Component {
     submit() {
         const form = {
             email: this.props.email,
-            password: document.getElementById('adl-logreg-pass').value,
-            password_confirmation: document.getElementById('adl-logreg-passc').value
+            password: document.getElementById('app-logreg-pass').value,
+            password_confirmation: document.getElementById('app-logreg-passc').value
         };
 
         this.props.getRegister(form);
@@ -32,16 +32,16 @@ class Register extends React.Component {
         return (
             <div>
                 <div>New to Adventure Lookup?</div>
-                <label htmlFor="adl-logreg-email" className="sr-only">Email address</label>
-                <input id="adl-logreg-email" type="text" className="form-control" placeholder="Email address"
+                <label htmlFor="app-logreg-email" className="sr-only">Email address</label>
+                <input id="app-logreg-email" type="text" className="form-control" placeholder="Email address"
                        onChange={this.changeEmail.bind(this)}
                        value={this.props.email}/>
 
-                <label htmlFor="adl-logreg-pass" className="sr-only">Password</label>
-                <input id="adl-logreg-pass" type="password" className="form-control" placeholder="Password"/>
+                <label htmlFor="app-logreg-pass" className="sr-only">Password</label>
+                <input id="app-logreg-pass" type="password" className="form-control" placeholder="Password"/>
 
-                <label htmlFor="adl-logreg-passc" className="sr-only">Confirm Password</label>
-                <input id="adl-logreg-passc" type="password" className="form-control" placeholder="Confirm Password"/>
+                <label htmlFor="app-logreg-passc" className="sr-only">Confirm Password</label>
+                <input id="app-logreg-passc" type="password" className="form-control" placeholder="Confirm Password"/>
 
                 <button className="submit" type="submit" onClick={this.submit.bind(this)}>Sign Up</button>
 

@@ -20,8 +20,8 @@ class ForgotPassword extends React.Component {
             <div>
                 <div>Forgot password?</div>
 
-                <label htmlFor="adl-logreg-email" className="sr-only">Email address</label>
-                <input id="adl-logreg-email" type="text" placeholder="Email address"
+                <label htmlFor="app-logreg-email" className="sr-only">Email address</label>
+                <input id="app-logreg-email" type="text" placeholder="Email address"
                        onChange={this.changeEmail.bind(this)} value={this.props.email}/>
 
                 <button className="submit" type="submit" onClick={this.submit.bind(this)}>Reset</button>

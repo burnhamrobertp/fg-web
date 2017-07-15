@@ -23,11 +23,11 @@ class Navbar extends React.Component {
 
     render() {
         return (
-            <div id="adl-navbar-container">
+            <div id="app-navbar-container">
                 <div className="container">
                     <nav className="navbar navbar-toggleable-md navbar-light">
                         <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                                data-target="#adl-navitems" aria-controls="adl-navitems"
+                                data-target="#app-navitems" aria-controls="app-navitems"
                                 aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"/>
                         </button>
@@ -37,7 +37,7 @@ class Navbar extends React.Component {
                             Web Grounds
                         </NavLink>
 
-                        <div id="adl-navitems">
+                        <div id="app-navitems">
                             <ul className="navbar-nav mr-auto">
                                 <li className="nav-item">
                                     <NavLink exact to="/" className="nav-link" activeClassName="active">Home</NavLink>

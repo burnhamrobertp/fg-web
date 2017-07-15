@@ -26,7 +26,7 @@ class NavProfile extends React.Component {
         return (
             <ul className="navbar-nav dropdown">
                 <li className="nav-item">
-                    <a id="adl-navbar-profile-link" className="nav-link dropdown-toggle" data-toggle="dropdown"
+                    <a id="app-navbar-profile-link" className="nav-link dropdown-toggle" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">
                         {this.renderAvatar()}
                         {this.props.user.display}

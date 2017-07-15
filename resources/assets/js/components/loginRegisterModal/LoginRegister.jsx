@@ -34,7 +34,7 @@ class LoginRegister extends React.Component {
 
     render() {
         return (
-            <div id="adl-logreg">
+            <div id="app-logreg">
                 {this.renderMessages()}
                 {this.renderActiveComponent()}
             </div>
